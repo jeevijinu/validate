@@ -7,10 +7,21 @@
          //-->
       </script>      
    </head>
-   
-   <body>
-      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
-         <table cellspacing = "2" cellpadding = "2" border = "1">
+   <style>
+      body{
+         background-image:url("https://img.freepik.com/premium-photo/minimal-interior-design-empty-living-room-empty-concrete-wall_221619-717.jpg");
+      background-repeat:no-repeat;
+      background-size: 1000px;
+      background-position: 0px 0px 0px 0px;
+      }
+      .center{
+         margin-left: 350px;
+         margin-top: 200px;
+      }
+   </style>
+   <body >
+      <form action = "https://github.com/jeevijinu/jeevi.portfolio" name = "myForm" onsubmit = "return(validate());">
+         <table class="center" cellspacing = "4" cellpadding = "10" border = "5">
             
             <tr>
                <td align = "right">Name</td>
@@ -40,40 +51,43 @@
             </tr>
             
             <tr>
-               <td align = "right"></td>
-               <td><input type = "submit" value = "Submit" /></td>
+               <td align = "center"></td>
+              <td><input type = "submit" value="Submit">
+            </td>
+
             </tr>
          <script type = "text/javascript">
-   <!--
-      // Form validation code will come here.
-      function validate() {
-      
-         if( document.myForm.Name.value == "" ) {
-            alert( "Please provide your name!" );
-            document.myForm.Name.focus() ;
-            return false;
-         }
-         if( document.myForm.EMail.value == "" ) {
-            alert( "Please provide your Email!" );
-            document.myForm.EMail.focus() ;
-            return false;
-         }
-         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
-            document.myForm.Zip.value.length != 5 ) {
-            
-            alert( "Please provide a zip in the format #####." );
-            document.myForm.Zip.focus() ;
-            return false;
-         }
-         if( document.myForm.Country.value == "-1" ) {
-            alert( "Please provide your country!" );
-            return false;
-         }
-         return( true );
-      }
-   //-->
-</script>
-</table>
+            <!--
+               // Form validation code will come here.
+               function validate() {
+               
+                  if( document.myForm.Name.value == "" ) {
+                     alert( "Please provide your name!" );
+                     document.myForm.Name.focus() ;
+                     return false;
+                  }
+                  if( document.myForm.EMail.value == "" ) {
+                     alert( "Please provide your Email!" );
+                     document.myForm.EMail.focus() ;
+                     return false;
+                  }
+                  if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+                     document.myForm.Zip.value.length != 6 ) {
+                     
+                     alert( "Please provide a zip in the format ######." );
+                     document.myForm.Zip.focus() ;
+                     return false;
+                  }
+                  if( document.myForm.Country.value == "-1" ) {
+                     alert( "Please provide your country!" );
+                     return false;
+                  }
+                  return( true );
+               }
+            //-->
+         </script>
+         </table>
       </form>      
    </body>
 </html>
+
